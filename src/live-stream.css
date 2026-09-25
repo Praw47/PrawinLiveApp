@@ -1,0 +1,19 @@
+.live-video { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; background: #080a08; object-fit: contain; }
+.stream-state { position: absolute; inset: 0; z-index: 2; display: grid; place-items: center; padding: 24px; background: #101210b8; color: #eef0e8; text-align: center; font-size: 12px; }
+.stream-state--action { width: 100%; border: 0; cursor: pointer; }
+.stream-sound { position: absolute; z-index: 3; right: 12px; bottom: 42px; padding: 8px 11px; border: 1px solid #ffffff55; border-radius: 4px; background: #101210d9; color: #fff; font-size: 11px; }
+.empty-live-state { margin: 24px 0 42px; padding: 28px 0; border-block: 1px solid var(--line); }
+.empty-live-state h2 { margin: 0 0 8px; color: var(--cream); font-size: 20px; }
+.empty-live-state > p:not(.eyebrow) { margin: 0 0 18px; color: var(--muted); font-size: 12px; }
+.empty-live-state .primary-button { width: auto; }
+.live-total { color: var(--muted); font-family: 'DM Mono', monospace; font-size: 10px; }
+.mobile-room-close { display: none; }
+
+@media (max-width: 1120px) {
+  .room-panel.is-mobile-open { position: fixed; z-index: 8; inset: 0 0 0 auto; display: flex; width: min(100%, 420px); height: 100dvh; overflow-y: auto; border-left: 1px solid var(--line); box-shadow: -16px 0 50px #0008; }
+  .room-panel.is-mobile-open .mobile-room-close { display: inline-grid; }
+}
+
+@media (max-width: 760px) {
+  .room-panel.is-mobile-open { inset: 0; width: 100%; border-left: 0; padding: 20px 18px; }
+}

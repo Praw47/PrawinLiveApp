@@ -1,0 +1,17 @@
+.screen-broadcast-modal { max-height: calc(100dvh - 32px); overflow-y: auto; }
+.screen-broadcast-modal form { display: grid; gap: 13px; }
+.screen-broadcast-modal form label { gap: 7px; }
+.screen-broadcast-modal input,
+.screen-broadcast-modal select { width: 100%; min-height: 42px; border: 1px solid #39412f; border-radius: 4px; background: #121511; color: var(--cream); padding: 10px 11px; font-size: 12px; }
+.screen-broadcast-modal input:disabled,
+.screen-broadcast-modal select:disabled { opacity: .7; }
+.screen-target-note,
+.screen-key-warning { color: var(--muted); font-size: 10px; line-height: 1.55; margin: -5px 0 2px; }
+.screen-stream-status { min-height: 18px; margin: 2px 0 0; color: var(--lime); font-size: 11px; line-height: 1.5; }
+.screen-key-warning { margin: 14px 0 0; }
+.stop-broadcast-button { background: #ed806f; color: #20110e; }
+
+@media (max-width: 420px) {
+  .screen-broadcast-modal { padding: 25px 20px; }
+  .screen-broadcast-modal h2 { font-size: 24px; }
+}
